@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import UseCases from "./components/UseCases";
+import WhyErrandGo from "./components/WhyErrandGo";
 
 function App() {
 	return (
@@ -16,6 +17,8 @@ function App() {
 			<HowItWorks />
 
 			<UseCases />
+
+			<WhyErrandGo />
 		</>
 	);
 }

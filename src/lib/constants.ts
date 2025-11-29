@@ -24,3 +24,17 @@ export const HELP_AND_EARN_USE_CASES = [
 	"Turn your spare time into extra income",
 	"Build trust and get chosen more often",
 ];
+
+export const ERRAND_CREATOR = [
+	"Save time and transportation costs",
+	"Get help anywhere you are unable to reach",
+	"Compare bids instead of paying fixed fees",
+	"Real-time update & proof of actions",
+];
+
+export const ERRAND_HELPER = [
+	"Flexible earnings",
+	"Simple and seamless onboarding",
+	"Build consistent income from everyday errands",
+	"Work around your schedule",
+];

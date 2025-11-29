@@ -2,7 +2,7 @@ import { GET_HELP_USE_CASES, HELP_AND_EARN_USE_CASES } from "@/lib/constants";
 import StarIcon from "./StarIcon";
 import CoinIcon from "./CoinIcon";
 
-function UseCases() {
+export default function UseCases() {
 	return (
 		<>
 			<div className="pt-[150px] bg-white px-5" id="how-it-works">
@@ -16,7 +16,7 @@ function UseCases() {
 						</h2>
 					</div>
 
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 						<div className="bg-[#F7F9FD] rounded-3xl py-8 px-[34px]">
 							<p className="font-bold text-[#7D32DF] text-[24px] md:text-[28px] mb-5">
 								Get Help with Errands
@@ -55,5 +55,3 @@ function UseCases() {
 		</>
 	);
 }
-
-export default UseCases;
