@@ -12,7 +12,7 @@ export default function HowItWorks() {
 	return (
 		<>
 			<div className="pt-[150px] bg-white px-5" id="how-it-works">
-				<div className="max-w-[1120px] w-full mx-auto text-[#00072D]">
+				<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn">
 					{/* HEADER */}
 					<div className="mb-8 text-center">
 						<span className="text-[#8791A7] text-[18px] lg:text-[24px] font-medium uppercase">
@@ -50,22 +50,26 @@ export default function HowItWorks() {
 							<>
 								<div className="flex flex-col justify-between gap-12">
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
-										<div className="bg-[#FAFAC6] flex items-center justify-center rounded-[20px] text-[43px] font-bold w-[72px] h-16">
+										<div className="bg-[#FAFAC6] flex items-center justify-center rounded-[20px] text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											1
 										</div>
-										<p className="font-bold text-[24px] ">Create an Errand</p>
-										<p className="text-[#383C45] font-normal text-[18px]">
+										<p className="font-bold text-[20px] lg:text-[24px]">
+											Create an Errand
+										</p>
+										<p className="text-[#383C45] font-normal text-[16px] lg:text-[18px]">
 											Sign up, describe what you need help with and set
 											requirements for your errands.
 										</p>
 									</div>
 
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
-										<div className="bg-[#F4EBFF] flex items-center justify-center rounded-[20px]  text-[43px] font-bold w-[72px] h-16">
+										<div className="bg-[#F4EBFF] flex items-center justify-center rounded-[20px]  text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											2
 										</div>
-										<p className="font-bold text-[24px] ">Receive Bids</p>
-										<p className="text-[#383C45] font-normal text-[18px]">
+										<p className="font-bold text-[20px] lg:text-[24px]">
+											Receive Bids
+										</p>
+										<p className="text-[#383C45] font-normal text-[16px] lg:text-[18px]">
 											Helpers near the errand location bid with price, distance
 											range and ratings.
 										</p>
@@ -78,26 +82,26 @@ export default function HowItWorks() {
 
 								<div className="flex flex-col justify-between gap-12">
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
-										<div className="bg-[#FCEBFF] flex items-center justify-center rounded-[20px] text-[43px] font-bold w-[72px] h-16">
+										<div className="bg-[#FCEBFF] flex items-center justify-center rounded-[20px] text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											3
 										</div>
-										<p className="font-bold text-[24px] ">
+										<p className="font-bold text-[20px] lg:text-[24px]">
 											Choose Preferred Helper
 										</p>
-										<p className="text-[#383C45] font-normal text-[18px]">
+										<p className="text-[#383C45] font-normal text-[16px] lg:text-[18px]">
 											Accept the bid that fits your budget and timeline or
 											enable the auto-accept function for easier selection.
 										</p>
 									</div>
 
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
-										<div className="bg-[#D5FFD4] flex items-center justify-center rounded-[20px]  text-[43px] font-bold w-[72px] h-16">
+										<div className="bg-[#D5FFD4] flex items-center justify-center rounded-[20px]  text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											4
 										</div>
-										<p className="font-bold text-[24px] ">
+										<p className="font-bold text-[20px] lg:text-[24px]">
 											Track & Get Updates
 										</p>
-										<p className="text-[#383C45] font-normal text-[18px]">
+										<p className="text-[#383C45] font-normal text-[16px] lg:text-[18px]">
 											Follow the errand progress and get update on the errand
 											requirements through texts, photos, or videos.
 										</p>
@@ -108,24 +112,26 @@ export default function HowItWorks() {
 							<>
 								<div className="flex flex-col justify-between gap-12">
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
-										<div className="bg-[#D5FFD4] flex items-center justify-center rounded-[20px] text-[43px] font-bold w-[72px] h-16">
+										<div className="bg-[#D5FFD4] flex items-center justify-center rounded-[20px] text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											1
 										</div>
-										<p className="font-bold text-[24px] ">Set-up Profile</p>
-										<p className="text-[#383C45] font-normal text-[18px]">
+										<p className="font-bold text-[20px] lg:text-[24px]">
+											Set-up Profile
+										</p>
+										<p className="text-[#383C45] font-normal text-[16px] lg:text-[18px]">
 											Sign up, provide all the required information and set your
 											errand location radius.
 										</p>
 									</div>
 
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
-										<div className="bg-[#FCEBFF] flex items-center justify-center rounded-[20px]  text-[43px] font-bold w-[72px] h-16">
+										<div className="bg-[#FCEBFF] flex items-center justify-center rounded-[20px]  text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											2
 										</div>
-										<p className="font-bold text-[24px] ">
+										<p className="font-bold text-[20px] lg:text-[24px]">
 											View Errands Around You
 										</p>
-										<p className="text-[#383C45] font-normal text-[18px]">
+										<p className="text-[#383C45] font-normal text-[16px] lg:text-[18px]">
 											Browse through available errands near your area or along
 											your route.
 										</p>
@@ -138,24 +144,26 @@ export default function HowItWorks() {
 
 								<div className="flex flex-col justify-between gap-12">
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
-										<div className="bg-[#F4EBFF] flex items-center justify-center rounded-[20px] text-[43px] font-bold w-[72px] h-16">
+										<div className="bg-[#F4EBFF] flex items-center justify-center rounded-[20px] text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											3
 										</div>
-										<p className="font-bold text-[24px] ">Place your bid</p>
-										<p className="text-[#383C45] font-normal text-[18px]">
+										<p className="font-bold text-[20px] lg:text-[24px]">
+											Place your bid
+										</p>
+										<p className="text-[#383C45] font-normal text-[16px] lg:text-[18px]">
 											Show interest in an errand of choice and set the price you
 											are willing to collect.
 										</p>
 									</div>
 
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
-										<div className="bg-[#FAFAC6] flex items-center justify-center rounded-[20px]  text-[43px] font-bold w-[72px] h-16">
+										<div className="bg-[#FAFAC6] flex items-center justify-center rounded-[20px]  text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											4
 										</div>
-										<p className="font-bold text-[24px]">
+										<p className="font-bold text-[20px] lg:text-[24px]">
 											Finish Errand, Get paid
 										</p>
-										<p className="text-[#383C45] font-normal text-[18px]">
+										<p className="text-[#383C45] font-normal text-[16px] lg:text-[18px]">
 											Give updates on assigned errand and receive payment
 											immediately after errand completion.
 										</p>
@@ -165,7 +173,7 @@ export default function HowItWorks() {
 						)}
 					</div>
 
-					<div className="max-w-[350px] w-full mx-auto mb-8">
+					<div className="max-w-[350px] w-full mx-auto">
 						<StoreButtons />
 					</div>
 				</div>

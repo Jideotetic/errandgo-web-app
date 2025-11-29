@@ -4,7 +4,7 @@ import StoreButtons from "./StoreButtons";
 export default function Hero() {
 	return (
 		<div className="relative min-h-screen px-5 pt-[200px] pb-[50px] sm:pb-[100px] bg-linear-to-b from-[#FFFFFF] to-[#F8F3FF] flex items-center justify-center">
-			<div className="max-w-[1120px] w-full mx-auto text-[#00072D] z-10">
+			<div className="max-w-[1120px] w-full mx-auto text-[#00072D] z-10 animate-FadeIn">
 				<div className="h-full flex w-full flex-col items-center gap-12 lg:flex-row">
 					<div className="flex flex-col gap-6 lg:max-w-xl">
 						<div className="space-y-8">
@@ -29,7 +29,7 @@ export default function Hero() {
 			</div>
 
 			<div
-				className={`bg-[url(/bg-logo.svg)] bg-cover bg-center h-[300px] absolute bottom-0 left-0 right-0 lg:bg-right lg:bg-contain bg-no-repeat lg:h-[450px]`}
+				className={`bg-[url(/bg-logo.svg)] bg-cover bg-center h-[300px] absolute bottom-0 left-0 right-0 lg:bg-right lg:bg-contain bg-no-repeat lg:h-[450px] animate-FadeIn`}
 			/>
 		</div>
 	);

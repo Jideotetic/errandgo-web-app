@@ -6,11 +6,8 @@ import frameFour from "/frame-4.svg";
 export default function Features() {
 	return (
 		<>
-			<div
-				className="pt-[150px] bg-white px-5"
-				id="features"
-			>
-				<div className="max-w-[1120px] w-full mx-auto text-[#00072D]">
+			<div className="pt-[150px] bg-white px-5" id="features">
+				<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn">
 					{/* Masonry */}
 					<div className="columns-1 md:columns-2 gap-8">
 						{/* HEADER */}
