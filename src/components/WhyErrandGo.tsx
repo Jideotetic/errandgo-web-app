@@ -1,10 +1,10 @@
 import { ERRAND_CREATOR, ERRAND_HELPER } from "@/lib/constants";
 import StoreButtons from "./StoreButtons";
-import StarIcon from "./StarIcon";
 import frameSix from "/frame-6.svg";
 import frameSeven from "/frame-7.svg";
 import frameSixMobile from "/frame-6-mobile.svg";
 import frameSevenMobile from "/frame-7-mobile.svg";
+import CheckMarkIcon from "./CheckMarkIcon";
 
 export default function WhyErrandGo() {
 	return (
@@ -32,7 +32,7 @@ export default function WhyErrandGo() {
 										key={index}
 										className="text-[#00072D] font-normal text-[16px] lg:text-[18px] mb-3 flex items-center gap-3"
 									>
-										<StarIcon />
+										<CheckMarkIcon color="#C0C000" />
 										{creator}
 									</li>
 								))}
@@ -59,7 +59,7 @@ export default function WhyErrandGo() {
 						/>
 
 						<img
-							src={frameSeven}
+							src={frameSevenMobile}
 							className="lg:hidden h-full w-full order-2 lg:order-1"
 							alt=""
 						/>
@@ -75,7 +75,7 @@ export default function WhyErrandGo() {
 										key={index}
 										className="text-[#00072D] font-normal text-[16px] lg:text-[18px] mb-3 flex items-center gap-3"
 									>
-										<StarIcon />
+										<CheckMarkIcon color="#7D32DF" />
 										{creator}
 									</li>
 								))}
@@ -83,7 +83,7 @@ export default function WhyErrandGo() {
 						</div>
 					</div>
 
-					<div className="max-w-[350px] w-full mx-auto mb-8">
+					<div className="max-w-[350px] w-full mx-auto">
 						<StoreButtons />
 					</div>
 				</div>
