@@ -5,7 +5,7 @@ import { Fragment } from "react/jsx-runtime";
 
 export default function Footer() {
 	return (
-		<footer className="py-[100px] bg-[#00072D] px-5" id="faqs">
+		<footer className="pt-[100px] pb-[50px] bg-[#00072D] px-5" id="faqs">
 			<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn">
 				<div className="grid grid-cols-1 lg:grid-cols-3 bg-[#F8F3FF] rounded-2xl px-4 py-10 lg:py-14 lg:px-[98px] gap-14 mb-8">
 					<img src={qrCode} className="hidden lg:block h-full w-full" alt="" />
