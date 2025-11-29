@@ -48,38 +48,44 @@ export const ERRAND_HELPER = [
 export const FAQs: Faqs[] = [
 	{
 		id: "item-1",
-		title: "How can I join Afro Ascend?",
+		title: "How does ErrandGo work?",
 		content: [
-			"Joining is simple! Just fill out the Get in Touch form by clicking the button at the top right corner of our website. Share as much information about yourself and your creative journey as possible. An Afro Ascend talent specialist will review your submission and reach out to you within 1-2 business days.",
+			"ErrandGo connects people who need quick help with those willing to assist. As an errand creator, you post what you need and set your budget. Errand helpers then place their bids, you choose the best one, and they complete the task while sharing updates. Helpers earn after the errand is confirmed.",
 		],
 	},
 	{
 		id: "item-2",
-		title: "Do I need to be an established creator to join?",
+		title: "What types of errands can I request?",
 		content: [
-			"Not at all. You don't need to be established to join Afro Ascend—that’s what we’re here for! Our mission is to help you build, grow, and elevate your brand. We provide mentorship, resources, and tools to guide your creative journey. All we look for is talent with a clear and sustainable creative roadmap.",
+			"ErrandGo connects people who need quick help with those willing to assist. As an errand creator, you post what you need and set your budget. Errand helpers then place their bids, you choose the best one, and they complete the task while sharing updates. Helpers earn after the errand is confirmed.",
 		],
 	},
 	{
 		id: "item-3",
-		title: "Is Afro Ascend free to join?",
-		content: ["Yes! Joining Afro Ascend is completely free of charge."],
+		title: "How much can I earn as an errand helper?",
+		content: [
+			"ErrandGo connects people who need quick help with those willing to assist. As an errand creator, you post what you need and set your budget. Errand helpers then place their bids, you choose the best one, and they complete the task while sharing updates. Helpers earn after the errand is confirmed.",
+		],
 	},
 	{
 		id: "item-4",
-		title: "Can I showcase my work on Afro Ascend?",
+		title: "How do I become an errand helper and start earning?",
 		content: [
-			"Absolutely. Showcasing your work is part of our selection process—we want to understand your creative style and vision. As an Afro Ascend talent, we'll also promote and amplify your content to wider and global audiences.",
+			"ErrandGo connects people who need quick help with those willing to assist. As an errand creator, you post what you need and set your budget. Errand helpers then place their bids, you choose the best one, and they complete the task while sharing updates. Helpers earn after the errand is confirmed.",
 		],
 	},
 	{
 		id: "item-5",
-		title: "How do I contact Afro Ascend for support?",
+		title: "Can I post an errand for a location I am not physically in?",
 		content: [
-			"You can reach us anytime through:",
-			"The Get in Touch form on our website",
-			"Email: info@afroascend.co",
-			"Direct message (DM) on our official social media pages",
+			"ErrandGo connects people who need quick help with those willing to assist. As an errand creator, you post what you need and set your budget. Errand helpers then place their bids, you choose the best one, and they complete the task while sharing updates. Helpers earn after the errand is confirmed.",
+		],
+	},
+	{
+		id: "item-6",
+		title: "What happens if a helper does not complete an errand?",
+		content: [
+			"ErrandGo connects people who need quick help with those willing to assist. As an errand creator, you post what you need and set your budget. Errand helpers then place their bids, you choose the best one, and they complete the task while sharing updates. Helpers earn after the errand is confirmed.",
 		],
 	},
 ];
