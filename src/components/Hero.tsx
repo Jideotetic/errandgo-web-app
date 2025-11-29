@@ -1,4 +1,6 @@
 import mobileAppImage from "/mobile-app-image.svg";
+import appStore from "/app-store.svg";
+import playStore from "/play-store.svg";
 
 export default function Hero() {
 	return (
@@ -16,6 +18,16 @@ export default function Hero() {
 								ErrandGo connects you with helpers who can handle your errands
 								and can also help you earn when you complete errands near you.
 							</p>
+						</div>
+
+						<div className="flex gap-4">
+							<button className="hover:scale-[1.02] transition-transform cursor-pointer">
+								<img src={appStore} alt="" />
+							</button>
+
+							<button className="hover:scale-[1.02] transition-transform cursor-pointer">
+								<img src={playStore} alt="" />
+							</button>
 						</div>
 					</div>
 
