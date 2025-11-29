@@ -1,3 +1,7 @@
+import { BsTiktok, BsTwitterX } from "react-icons/bs";
+import { FaFacebook } from "react-icons/fa";
+import { ImInstagram } from "react-icons/im";
+
 export interface NavLink {
 	title: string;
 	href: string;
@@ -13,6 +17,13 @@ export const NAV_LINKS: NavLink[] = [
 	{ title: "Features", href: "#features" },
 	{ title: "How It Works", href: "#how-it-works" },
 	{ title: "FAQs", href: "#faqs" },
+];
+
+export const FOOTER_LINKS = [
+	{ title: "Instagram", href: "https://www.instagram.com", icon: ImInstagram },
+	{ title: "Twitter", href: "https://www.x.com", icon: BsTwitterX },
+	{ title: "TikTok", href: "https://www.tiktok.com", icon: BsTiktok },
+	{ title: "Facebook", href: "https://www.facebook.com", icon: FaFacebook },
 ];
 
 export const GET_HELP_USE_CASES = [
