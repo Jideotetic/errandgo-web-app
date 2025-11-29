@@ -1,6 +1,5 @@
 import mobileAppImage from "/mobile-app-image.svg";
-import appStore from "/app-store.svg";
-import playStore from "/play-store.svg";
+import StoreButtons from "./StoreButtons";
 
 export default function Hero() {
 	return (
@@ -20,14 +19,8 @@ export default function Hero() {
 							</p>
 						</div>
 
-						<div className="flex gap-4">
-							<button className="hover:scale-[1.02] transition-transform cursor-pointer">
-								<img src={appStore} alt="" />
-							</button>
-
-							<button className="hover:scale-[1.02] transition-transform cursor-pointer">
-								<img src={playStore} alt="" />
-							</button>
+						<div className="max-w-[350px] w-full">
+							<StoreButtons />
 						</div>
 					</div>
 

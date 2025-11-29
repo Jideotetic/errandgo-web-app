@@ -42,6 +42,17 @@
 	--color-sidebar-ring: var(--sidebar-ring);
 	--font-unbounded: Unbounded;
 	--font-urbanist: Urbanist;
+
+	--animate-FadeIn: FadeIn 1s ease-in;
+
+	@keyframes FadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 }
 
 :root {

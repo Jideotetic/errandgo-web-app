@@ -1,0 +1,16 @@
+import appStore from "/app-store.svg";
+import playStore from "/play-store.svg";
+
+export default function StoreButtons() {
+	return (
+		<div className="flex gap-4">
+			<button className="hover:scale-[1.02] transition-transform cursor-pointer">
+				<img src={appStore} alt="" />
+			</button>
+
+			<button className="hover:scale-[1.02] transition-transform cursor-pointer">
+				<img src={playStore} alt="" />
+			</button>
+		</div>
+	);
+}

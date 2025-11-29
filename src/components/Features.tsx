@@ -7,7 +7,7 @@ export default function Features() {
 	return (
 		<>
 			<div
-				className="pt-[150px] pb-[50px] sm:pb-[100px] bg-white px-5"
+				className="pt-[150px] bg-white px-5"
 				id="features"
 			>
 				<div className="max-w-[1120px] w-full mx-auto text-[#00072D]">
