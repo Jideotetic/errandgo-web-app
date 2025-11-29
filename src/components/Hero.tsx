@@ -1,7 +1,31 @@
+import mobileAppImage from "/mobile-app-image.svg";
+
 export default function Hero() {
 	return (
-		<div className="h-screen border-2 border-red-500 bg-linear-to-b from-[#FFFFFF] to-[#F8F3FF] flex items-center justify-center">
-			Hello, Hero Component!
+		<div className="relative min-h-screen px-5 pt-[200px] pb-[50px] sm:pb-[100px] bg-linear-to-b from-[#FFFFFF] to-[#F8F3FF] flex items-center justify-center">
+			<div className="max-w-[1120px] w-full mx-auto text-[#00072D] z-10">
+				<div className="h-full flex w-full flex-col items-center gap-12 lg:flex-row">
+					<div className="flex flex-col gap-6 lg:max-w-xl">
+						<div className="space-y-8">
+							<h1 className="text-[32px] font-semibold md:text-[52px] font-unbounded">
+								Swift <span className="text-[#7D32DF]">Errands</span>, Real
+								Earnings, One App
+							</h1>
+
+							<p className="text-[20px] font-normal md:text-[24px] text-[#525866]">
+								ErrandGo connects you with helpers who can handle your errands
+								and can also help you earn when you complete errands near you.
+							</p>
+						</div>
+					</div>
+
+					<img src={mobileAppImage} alt="Mobile App logo" />
+				</div>
+			</div>
+
+			<div
+				className={`bg-[url(/bg-logo.svg)] bg-cover bg-center h-[300px] absolute bottom-0 left-0 right-0 lg:bg-right lg:bg-contain bg-no-repeat lg:h-[450px]`}
+			/>
 		</div>
 	);
 }

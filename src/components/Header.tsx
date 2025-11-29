@@ -12,22 +12,25 @@ function Header() {
 			<div className="max-w-[1120px] w-full mx-auto p-4 sm:py-5 sm:px-8 bg-[#F8F3FF] text-[#00072D] rounded-[360px] h-[88px] flex justify-between items-center">
 				<Logo />
 
-				<nav className="hidden lg:block">
-					<ul className="flex gap-12">
-						{NAV_LINKS.map((link: NavLink) => (
-							<li key={link.title}>
-								<a
-									className="hover:text-[#7D32DF] hover:underline"
-									href={link.href}
-								>
-									{link.title}
-								</a>
-							</li>
-						))}
-					</ul>
-				</nav>
+				{/* DESKTOP NAV */}
+				<>
+					<nav className="hidden lg:block">
+						<ul className="flex gap-12">
+							{NAV_LINKS.map((link: NavLink) => (
+								<li key={link.title}>
+									<a
+										className="hover:text-[#7D32DF] hover:underline"
+										href={link.href}
+									>
+										{link.title}
+									</a>
+								</li>
+							))}
+						</ul>
+					</nav>
 
-				<DownloadApp tag="desktop" />
+					<DownloadApp tag="desktop" />
+				</>
 
 				{/* MOBILE NAV */}
 				<MobileNavigation
