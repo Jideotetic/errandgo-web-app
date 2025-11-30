@@ -61,7 +61,9 @@ export default function Footer() {
 							))}
 						</div>
 
-						<p className="text-left">© 2025 ErrandGo. All rights reserved </p>
+						<p className="text-left">
+							© {new Date().getFullYear()} ErrandGo. All rights reserved
+						</p>
 					</div>
 				</div>
 			</div>
