@@ -3,8 +3,8 @@ import StoreButtons from "./StoreButtons";
 
 export default function Hero() {
 	return (
-		<div className="relative min-h-screen px-5 pt-[200px] pb-[50px] sm:pb-[100px] bg-linear-to-b from-[#FFFFFF] to-[#F8F3FF] flex items-center justify-center">
-			<div className="max-w-[1120px] w-full mx-auto text-[#00072D] z-10 animate-FadeIn">
+		<div className="relative max-w-[1440px] mx-auto px-5 pt-[200px] bg-linear-to-b from-[#FFFFFF] to-[#F8F3FF] flex items-center justify-center">
+			<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn pb-[50px] sm:pb-[100px] z-10">
 				<div className="h-full flex w-full flex-col items-center gap-12 lg:flex-row">
 					<div className="flex flex-col gap-6 lg:max-w-xl">
 						<div className="space-y-8">

@@ -42,7 +42,7 @@
 	--color-sidebar-ring: var(--sidebar-ring);
 	--font-unbounded: Unbounded;
 	--font-urbanist: Urbanist;
-
+	--animate-SlideIn: SlideIn 1s ease-in;
 	--animate-FadeIn: FadeIn 1s ease-in;
 
 	@keyframes FadeIn {
@@ -51,6 +51,17 @@
 		}
 		100% {
 			opacity: 1;
+		}
+	}
+
+	@keyframes SlideIn {
+		0% {
+			opacity: 0;
+			transform: translateX(-999px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0);
 		}
 	}
 }

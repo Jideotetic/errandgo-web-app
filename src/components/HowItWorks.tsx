@@ -44,7 +44,7 @@ export default function HowItWorks() {
 
 					<div
 						key={view}
-						className="grid grid-cols-1 lg:grid-cols-3 mb-8 gap-6 animate-FadeIn"
+						className="grid grid-cols-1 lg:grid-cols-3 mb-8 gap-6 animate-SlideIn"
 					>
 						{view === "get-help" ? (
 							<>
