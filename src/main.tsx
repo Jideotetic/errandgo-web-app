@@ -5,6 +5,8 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import RootLayout from "./components/RootLayout.tsx";
 import HomePage from "@/components/pages/HomePage.tsx";
+import PrivacyPolicy from "./components/pages/PrivacyPolicy.tsx";
+import TermOfUse from "./components/pages/TermOfUse.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -12,8 +14,8 @@ const router = createBrowserRouter([
 		Component: RootLayout,
 		children: [
 			{ index: true, Component: HomePage },
-			{ path: "privacy-policy", element: <div className="h-screen"></div> },
-			{ path: "term-of-use", element: <div className="h-screen"></div> },
+			{ path: "privacy-policy", Component: PrivacyPolicy },
+			{ path: "term-of-use", Component: TermOfUse },
 		],
 	},
 ]);
