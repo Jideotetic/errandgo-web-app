@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as SheetPrimitive from "@radix-ui/react-dialog";
-import { XIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { IoCloseOutline } from "react-icons/io5";
 
 function Sheet({ ...props }: React.ComponentProps<typeof SheetPrimitive.Root>) {
 	return <SheetPrimitive.Root data-slot="sheet" {...props} />;
@@ -69,8 +69,8 @@ function SheetContent({
 				{...props}
 			>
 				{children}
-				<SheetPrimitive.Close className="bg-[#00072D] w-7 h-7 cursor-pointer rounded-full absolute top-9 right-8 opacity-100 transition-opacity hover:opacity-70 focus:outline-hidden">
-					<XIcon className="size-6 mx-auto text-white" />
+				<SheetPrimitive.Close className="bg-[#00072D] w-8 h-8 cursor-pointer rounded-full absolute top-9 right-8 opacity-100 transition-opacity hover:opacity-70 focus:outline-hidden">
+					<IoCloseOutline className="text-[32px] mx-auto text-white" />
 					<span className="sr-only">Close</span>
 				</SheetPrimitive.Close>
 			</SheetPrimitive.Content>

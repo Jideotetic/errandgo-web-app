@@ -24,7 +24,11 @@ export default function Hero() {
 						</div>
 					</div>
 
-					<img src={mobileAppImage} alt="Mobile App logo" />
+					<img
+						src={mobileAppImage}
+						className="h-auto sm:h-[656px]"
+						alt="Mobile App logo"
+					/>
 				</div>
 			</div>
 

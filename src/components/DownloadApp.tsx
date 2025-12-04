@@ -7,7 +7,7 @@ interface DownloadAppProps {
 export default function DownloadApp({ tag }: DownloadAppProps) {
 	return (
 		<div
-			className={`flex gap-3 justify-center items-center rounded-[360px] py-4 px-6 bg-[#7D32DF] text-white font-medium text-15px transition-colors duration-300 ${
+			className={`flex gap-3 justify-center items-center rounded-[360px] py-4 px-6 bg-[#7D32DF] text-white font-medium text-base transition-colors duration-300 ${
 				tag === "desktop"
 					? "hidden lg:flex"
 					: tag === "mobile"
@@ -16,15 +16,17 @@ export default function DownloadApp({ tag }: DownloadAppProps) {
 			}`}
 		>
 			<div className="flex items-center gap-3">
-				<button className="cursor-pointer">
-					<FaApple className="text-[20px]" />
+				<button className="cursor-pointer shrink-0">
+					<FaApple className="text-[24px]" />
 				</button>
 				|
-				<button className="cursor-pointer">
-					<FaGooglePlay className="text-[16px]" />
+				<button className="cursor-pointer shrink-0">
+					<FaGooglePlay className="text-[24]" />
 				</button>
 			</div>
-			<span className="shrink-0 text-[12px] sm:text-[15px]">Download App</span>
+			<span className="shrink-0">
+				{tag === "desktop" ? "Download App" : "Download"}
+			</span>
 		</div>
 	);
 }

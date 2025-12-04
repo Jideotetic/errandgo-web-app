@@ -39,7 +39,7 @@ export function MobileNavigation({
 		<Sheet open={sheetIsOpen} onOpenChange={setSheetIsOpen}>
 			<SheetTrigger asChild>
 				<button className="cursor-pointer focus:ring-none focus:outline-hidden lg:hidden">
-					<IoMenu className="text-[50px] text-[#00072D]" />
+					<IoMenu className="text-[32px]" />
 					<span className="sr-only">Open mobile navigation</span>
 				</button>
 			</SheetTrigger>

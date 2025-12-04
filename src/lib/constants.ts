@@ -14,9 +14,9 @@ interface Faqs {
 }
 
 export const NAV_LINKS: NavLink[] = [
-	{ title: "Features", href: "#features" },
-	{ title: "How It Works", href: "#how-it-works" },
-	{ title: "FAQs", href: "#faqs" },
+	{ title: "Features", href: "/#features" },
+	{ title: "How It Works", href: "/#how-it-works" },
+	{ title: "FAQs", href: "/#faqs" },
 ];
 
 export const FOOTER_LINKS = [

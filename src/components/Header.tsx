@@ -8,8 +8,8 @@ function Header() {
 	const [sheetIsOpen, setSheetIsOpen] = useState(false);
 
 	return (
-		<div className="px-5 fixed left-0 right-0 pt-12 pb-5 bg-linear-to-b from-[#FFFFFF] to-transparent z-50">
-			<div className="max-w-[1120px] w-full mx-auto p-4 sm:py-5 sm:px-8 bg-[#F8F3FF] text-[#00072D] rounded-[360px] h-[88px] flex justify-between items-center">
+		<div className="px-4 pt-8 pb-4 lg:pt-12 fixed left-0 right-0 bg-linear-to-b from-[#FFFFFF] to-transparent z-50">
+			<div className="max-w-[1120px] w-full mx-auto h-16 p-4 lg:py-5 lg:px-[72px] gap-2.5 bg-[#F8F3FF] rounded-[360px] lg:h-[88px] flex justify-between items-center">
 				<Logo />
 
 				{/* DESKTOP NAV */}
@@ -19,7 +19,7 @@ function Header() {
 							{NAV_LINKS.map((link: NavLink) => (
 								<li key={link.title}>
 									<a
-										className="hover:text-[#7D32DF] hover:underline"
+										className="hover:text-[#7D32DF] hover:underline text-base"
 										href={link.href}
 									>
 										{link.title}
@@ -43,7 +43,7 @@ function Header() {
 							{NAV_LINKS.map((link) => (
 								<li key={link.title}>
 									<a
-										className="hover:text-[#7D32DF] text-[16px] font-normal text-[#00072D] hover:underline"
+										className="hover:text-[#7D32DF] text-base font-normal text-[#00072D] hover:underline"
 										href={link.href}
 										onClick={() => setSheetIsOpen(false)}
 									>
