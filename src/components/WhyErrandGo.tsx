@@ -9,7 +9,7 @@ import CheckMarkIcon from "./CheckMarkIcon";
 export default function WhyErrandGo() {
 	return (
 		<>
-			<div className="pt-[150px] bg-white px-5" id="how-it-works">
+			<div className="pt-[110px] lg:pt-[150px] bg-white px-4">
 				<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn">
 					<div className="mb-8 text-center">
 						<span className="text-[#8791A7] text-[18px] lg:text-[24px] font-medium uppercase">
@@ -21,7 +21,7 @@ export default function WhyErrandGo() {
 					</div>
 
 					<div className="grid grid-cols-1 lg:grid-cols-2 mb-10">
-						<div className="bg-[#FAFAC6] py-8 px-10 rounded-t-2xl lg:rounded-l-2xl lg:rounded-t-none">
+						<div className="bg-[#FAFAC6] py-8 px-10 rounded-t-2xl lg:rounded-l-2xl lg:rounded-t-none flex flex-col justify-center">
 							<p className="font-bold text-[#00072D] text-[24px] md:text-[28px] mb-5 font-unbounded">
 								As an Errand Creator,
 							</p>
@@ -64,7 +64,7 @@ export default function WhyErrandGo() {
 							alt=""
 						/>
 
-						<div className="bg-[#F4EBFF] py-8 px-10 order-1 lg:order-2 rounded-t-2xl lg:rounded-r-2xl lg:rounded-t-none">
+						<div className="bg-[#F4EBFF] py-8 px-10 order-1 lg:order-2 rounded-t-2xl lg:rounded-r-2xl lg:rounded-t-none flex flex-col justify-center">
 							<p className="font-bold text-[#00072D] text-[24px] md:text-[28px] mb-5 font-unbounded">
 								As an Errand Helper,
 							</p>

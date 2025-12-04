@@ -2,11 +2,12 @@ import { FOOTER_LINKS } from "@/lib/constants";
 import StoreButtons from "./StoreButtons";
 import qrCode from "/qr-code.svg";
 import { Fragment } from "react/jsx-runtime";
+import { Link } from "react-router";
 
 export default function Footer() {
 	return (
 		<footer
-			className="pt-[100px] pb-[50px] max-w-[1440px] mx-auto w-full bg-[#00072D] px-5"
+			className="pt-[100px] pb-[50px] max-w-[1440px] mx-auto w-full bg-[#00072D] px-4"
 			id="faqs"
 		>
 			<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn">
@@ -47,15 +48,19 @@ export default function Footer() {
 					</div>
 
 					<div className="text-[#F8F3FF] space-y-5">
-						<div className="flex flex-wrap w-fit gap-5 ">
+						<div className="text-[#F8F3FF] flex gap-10 sm:justify-end">
+							<Link to="term-of-use">Term of Use</Link>
+							<Link to="privacy-policy">Privacy Policy</Link>
+						</div>
+
+						<div className="flex flex-wrap w-fit gap-5 sm:ml-auto">
 							{FOOTER_LINKS.map((link, i) => (
 								<Fragment key={i}>
 									<a
 										className="font-normal text-[#F8F3FF] flex items-center gap-2"
 										href={link.href}
 									>
-										<link.icon />
-										{link.title}
+										<link.icon className="text-2xl" />
 									</a>
 								</Fragment>
 							))}

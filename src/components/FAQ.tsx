@@ -8,7 +8,7 @@ import {
 
 export default function FAQ() {
 	return (
-		<div className="pt-[150px] bg-white px-5" id="faqs">
+		<div className="pt-[110px] lg:pt-[150px] bg-white px-4" id="faqs">
 			<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn">
 				<div className="mb-8 text-center">
 					<span className="text-[#8791A7] text-[18px] lg:text-[24px] font-medium uppercase">
@@ -22,7 +22,7 @@ export default function FAQ() {
 				<Accordion type="single" collapsible className="w-full mb-20">
 					{FAQs.map((item, index) => (
 						<AccordionItem
-							className="bg-[#F7F9FD] rounded-2xl p-6 mb-5"
+							className="bg-[#F7F9FD] rounded-2xl p-6 py-4 mb-5 shadow-none"
 							key={item.id}
 							value={item.id}
 						>
@@ -31,7 +31,7 @@ export default function FAQ() {
 									{index + 1}. <span>{item.title}</span>
 								</p>
 							</AccordionTrigger>
-							<AccordionContent className="flex flex-col gap-4 text-balance bg-white py-4 px-[30px] rounded-xl text-[#00072D] text-[18px] lg:text-[20px]">
+							<AccordionContent className="flex flex-col gap-4 text-balance bg-white py-4 px-[30px] rounded-xl text-[#383C45] font-normal text-[18px] lg:text-[20px]">
 								{item.content.map((paragraph, index) => (
 									<p key={index}>{paragraph}</p>
 								))}

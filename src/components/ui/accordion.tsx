@@ -41,10 +41,10 @@ function AccordionTrigger({
 				{children}
 
 				{/* Plus icon: visible when closed */}
-				<FaPlusCircle className="text-[#7D32DF] block group-data-[state=open]:hidden" />
+				<FaPlusCircle className="text-[#7D32DF] text-[24px] block group-data-[state=open]:hidden" />
 
 				{/* Minus icon: visible when open */}
-				<FaMinusCircle className="text-[#7D32DF] hidden group-data-[state=open]:block" />
+				<FaMinusCircle className="text-[#7D32DF] text-[24px] hidden group-data-[state=open]:block" />
 			</AccordionPrimitive.Trigger>
 		</AccordionPrimitive.Header>
 	);
