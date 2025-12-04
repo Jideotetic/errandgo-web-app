@@ -26,7 +26,7 @@ export default function Hero() {
 
 					<img
 						src={mobileAppImage}
-						className="h-auto sm:h-[656px]"
+						className="h-auto sm:h-[656px] animate-SlideIn"
 						alt="Mobile App logo"
 					/>
 				</div>
