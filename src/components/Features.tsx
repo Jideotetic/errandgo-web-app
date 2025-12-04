@@ -6,7 +6,7 @@ import frameFour from "/frame-4.svg";
 export default function Features() {
 	return (
 		<>
-			<div className="pt-[150px] bg-white px-5" id="features">
+			<div className="pt-[110px] lg:pt-[150px] bg-white px-4" id="features">
 				<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn">
 					{/* Masonry */}
 					<div className="columns-1 md:columns-2 gap-8">
@@ -27,7 +27,7 @@ export default function Features() {
 								<h3 className="text-[24px] lg:text-[28px] text-[#7D32DF] font-bold">
 									Smooth Errand Request Process
 								</h3>
-								<p className="text-[#383C45] lg:text-[18px] font-normal">
+								<p className="text-[#383C45] text-base lg:text-[18px] font-normal">
 									Seamlessly create an errand request, set the amount you are
 									willing to pay, and let nearby helpers pick it up. Receive
 									inquiries from near or distant locations out of your reach.
@@ -42,7 +42,7 @@ export default function Features() {
 								<h3 className="text-[24px] lg:text-[28px] text-[#C2C200] font-bold">
 									Smart Bidding System
 								</h3>
-								<p className="text-[#383C45] lg:text-[18px] font-normal">
+								<p className="text-[#383C45] text-base lg:text-[18px] font-normal">
 									Errand creators get multiple bids, errand helpers compete with
 									fair bids to earn. Everyone chooses what works best based on
 									price, ratings, or proximity to errand location.
@@ -57,7 +57,7 @@ export default function Features() {
 								<h3 className="text-[24px] lg:text-[28px] text-[#4ABD46] font-bold">
 									Real Time Updates
 								</h3>
-								<p className="text-[#383C45] lg:text-[18px] font-normal">
+								<p className="text-[#383C45] text-base lg:text-[18px] font-normal">
 									Get photos, videos, messages, and progress reports as your
 									errand is being carried out as updates are being shared by the
 									errand pal and requirements get approved on-the-go.
@@ -72,7 +72,7 @@ export default function Features() {
 								<h3 className="text-[24px] lg:text-[28px] text-[#B331CE] font-bold">
 									Swift Payment and Withdrawal
 								</h3>
-								<p className="text-[#383C45] lg:text-[18px] font-normal">
+								<p className="text-[#383C45] text-base lg:text-[18px] font-normal">
 									You get paid as an errand helper as soon as an errand is
 									completed. Payments are secured within the app with clear
 									charges and fair earnings.

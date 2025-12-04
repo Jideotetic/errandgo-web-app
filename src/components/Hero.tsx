@@ -3,17 +3,17 @@ import StoreButtons from "./StoreButtons";
 
 export default function Hero() {
 	return (
-		<div className="relative max-w-[1440px] mx-auto w-full px-5 pt-[200px] pb-[50px] sm:pb-[100px] bg-linear-to-b from-[#FFFFFF] to-[#F8F3FF] flex items-center justify-center">
+		<div className="relative max-w-[1440px] mx-auto w-full px-4 pt-[153px] lg:pt-[200px] pb-[50px] sm:pb-[100px] bg-linear-to-b from-[#FFFFFF] to-[#F8F3FF] flex items-center justify-center">
 			<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn z-10">
 				<div className="h-full flex w-full flex-col items-center gap-12 lg:flex-row">
 					<div className="flex flex-col gap-6 lg:max-w-xl">
 						<div className="space-y-8">
-							<h1 className="text-[32px] font-semibold md:text-[52px] font-unbounded">
+							<h1 className="text-[32px] font-semibold lg:text-[52px] font-unbounded">
 								Swift <span className="text-[#7D32DF]">Errands</span>, Real
 								Earnings, One App
 							</h1>
 
-							<p className="text-[20px] font-normal md:text-[24px] text-[#525866]">
+							<p className="text-[20px] font-normal lg:text-[24px] text-[#525866]">
 								ErrandGo connects you with helpers who can handle your errands
 								and can also help you earn when you complete errands near you.
 							</p>

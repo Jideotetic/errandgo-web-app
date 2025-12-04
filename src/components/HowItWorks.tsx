@@ -11,7 +11,7 @@ export default function HowItWorks() {
 
 	return (
 		<>
-			<div className="pt-[150px] bg-white px-5" id="how-it-works">
+			<div className="pt-[110px] lg:pt-[150px] bg-white px-4" id="how-it-works">
 				<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn">
 					{/* HEADER */}
 					<div className="mb-8 text-center">
@@ -44,11 +44,11 @@ export default function HowItWorks() {
 
 					<div
 						key={view}
-						className="grid grid-cols-1 lg:grid-cols-3 mb-8 gap-6 animate-SlideIn"
+						className="grid grid-cols-1 lg:grid-cols-3 mb-8 gap-6 animate-FadeIn"
 					>
 						{view === "get-help" ? (
 							<>
-								<div className="flex flex-col justify-between gap-12">
+								<div className="flex flex-col justify-between gap-12 max-w-[343px] mx-auto w-full">
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
 										<div className="bg-[#FAFAC6] flex items-center justify-center rounded-[20px] text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											1
@@ -80,7 +80,7 @@ export default function HowItWorks() {
 									<img src={frameFive} className="h-full" alt="" />
 								</div>
 
-								<div className="flex flex-col justify-between gap-12">
+								<div className="flex flex-col justify-between gap-12 max-w-[343px] mx-auto w-full">
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
 										<div className="bg-[#FCEBFF] flex items-center justify-center rounded-[20px] text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											3
@@ -110,7 +110,7 @@ export default function HowItWorks() {
 							</>
 						) : (
 							<>
-								<div className="flex flex-col justify-between gap-12">
+								<div className="flex flex-col justify-between gap-12 max-w-[343px] mx-auto w-full">
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
 										<div className="bg-[#D5FFD4] flex items-center justify-center rounded-[20px] text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											1
@@ -142,7 +142,7 @@ export default function HowItWorks() {
 									<img src={frameFive} className="h-full" alt="" />
 								</div>
 
-								<div className="flex flex-col justify-between gap-12">
+								<div className="flex flex-col justify-between gap-12 max-w-[343px] mx-auto w-full">
 									<div className="space-y-6 rounded-lg p-4 text-[#00072D]">
 										<div className="bg-[#F4EBFF] flex items-center justify-center rounded-[20px] text-[28px] lg:text-[43px] font-bold w-[72px] h-16">
 											3

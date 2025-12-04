@@ -5,7 +5,7 @@ import CoinIcon from "./CoinIcon";
 export default function UseCases() {
 	return (
 		<>
-			<div className="pt-[150px] bg-white px-5" id="how-it-works">
+			<div className="pt-[110px] lg:pt-[150px] bg-white px-4">
 				<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn">
 					<div className="mb-8 text-center">
 						<span className="text-[#8791A7] text-[18px] lg:text-[24px] font-medium uppercase">
