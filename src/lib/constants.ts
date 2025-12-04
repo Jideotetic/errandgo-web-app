@@ -7,7 +7,7 @@ export interface NavLink {
 	href: string;
 }
 
-interface Faqs {
+interface Accordion {
 	id: string;
 	title: string;
 	content: string[];
@@ -59,7 +59,7 @@ export const ERRAND_HELPER = [
 	"Work around your schedule",
 ];
 
-export const FAQs: Faqs[] = [
+export const FAQs: Accordion[] = [
 	{
 		id: "item-1",
 		title: "How does ErrandGo work?",
@@ -104,7 +104,7 @@ export const FAQs: Faqs[] = [
 	},
 ];
 
-export const PRIVACY_POLICY: Faqs[] = [
+export const PRIVACY_POLICY: Accordion[] = [
 	{
 		id: "item-1",
 		title: "Introduction",

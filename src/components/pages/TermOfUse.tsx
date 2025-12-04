@@ -11,6 +11,128 @@ function TermOfUse() {
 						Last updated December 10, 2025
 					</span>
 				</div>
+
+				<div className="space-y-10 mb-20">
+					<div className="space-y-3">
+						<h3 className="text-[20px] lg:text-2xl text-[#161616] font-bold">
+							Collection of Personal Information
+						</h3>
+						<p className="text-base lg:text-[18px] font-normal text-[#383C45]">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+							temporibus, vitae omnis ratione autem ex eveniet aliquid velit,
+							pariatur, quod suscipit! Cum veritatis nisi, temporibus dolor
+							reiciendis minus ab ipsum. Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Neque modi assumenda repellendus ea error
+							voluptatibus a possimus perferendis magni fuga? Quod, totam!
+							Consectetur ab quis nisi reiciendis natus? Facere, magnam.
+						</p>
+					</div>
+
+					<div className="space-y-3">
+						<h3 className="text-[20px] lg:text-2xl text-[#161616] font-bold">
+							Collection of Personal Information
+						</h3>
+						<p className="text-base lg:text-[18px] font-normal text-[#383C45]">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+							temporibus, vitae omnis ratione autem ex eveniet aliquid velit,
+							pariatur, quod suscipit! Cum veritatis nisi, temporibus dolor
+							reiciendis minus ab ipsum. Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Neque modi assumenda repellendus ea error
+							voluptatibus a possimus perferendis magni fuga? Quod, totam!
+							Consectetur ab quis nisi reiciendis natus? Facere, magnam.
+						</p>
+					</div>
+
+					<div className="space-y-3">
+						<h3 className="text-[20px] lg:text-2xl text-[#161616] font-bold">
+							Collection of Personal Information
+						</h3>
+						<p className="text-base lg:text-[18px] font-normal text-[#383C45]">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+							temporibus, vitae omnis ratione autem ex eveniet aliquid velit,
+							pariatur, quod suscipit! Cum veritatis nisi, temporibus dolor
+							reiciendis minus ab ipsum. Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Neque modi assumenda repellendus ea error
+							voluptatibus a possimus perferendis magni fuga? Quod, totam!
+							Consectetur ab quis nisi reiciendis natus? Facere, magnam.
+						</p>
+					</div>
+
+					<div className="space-y-3">
+						<h3 className="text-[20px] lg:text-2xl text-[#161616] font-bold">
+							Collection of Personal Information
+						</h3>
+						<p className="text-base lg:text-[18px] font-normal text-[#383C45]">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+							temporibus, vitae omnis ratione autem ex eveniet aliquid velit,
+							pariatur, quod suscipit! Cum veritatis nisi, temporibus dolor
+							reiciendis minus ab ipsum. Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Neque modi assumenda repellendus ea error
+							voluptatibus a possimus perferendis magni fuga? Quod, totam!
+							Consectetur ab quis nisi reiciendis natus? Facere, magnam.
+						</p>
+					</div>
+
+					<div className="space-y-3">
+						<h3 className="text-[20px] lg:text-2xl text-[#161616] font-bold">
+							Collection of Personal Information
+						</h3>
+						<p className="text-base lg:text-[18px] font-normal text-[#383C45]">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+							temporibus, vitae omnis ratione autem ex eveniet aliquid velit,
+							pariatur, quod suscipit! Cum veritatis nisi, temporibus dolor
+							reiciendis minus ab ipsum. Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Neque modi assumenda repellendus ea error
+							voluptatibus a possimus perferendis magni fuga? Quod, totam!
+							Consectetur ab quis nisi reiciendis natus? Facere, magnam.
+						</p>
+					</div>
+
+					<div className="space-y-3">
+						<h3 className="text-[20px] lg:text-2xl text-[#161616] font-bold">
+							Collection of Personal Information
+						</h3>
+						<p className="text-base lg:text-[18px] font-normal text-[#383C45]">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+							temporibus, vitae omnis ratione autem ex eveniet aliquid velit,
+							pariatur, quod suscipit! Cum veritatis nisi, temporibus dolor
+							reiciendis minus ab ipsum. Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Neque modi assumenda repellendus ea error
+							voluptatibus a possimus perferendis magni fuga? Quod, totam!
+							Consectetur ab quis nisi reiciendis natus? Facere, magnam.
+						</p>
+					</div>
+
+					<div className="space-y-3">
+						<h3 className="text-[20px] lg:text-2xl text-[#161616] font-bold">
+							Collection of Personal Information
+						</h3>
+						<p className="text-base lg:text-[18px] font-normal text-[#383C45]">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+							temporibus, vitae omnis ratione autem ex eveniet aliquid velit,
+							pariatur, quod suscipit! Cum veritatis nisi, temporibus dolor
+							reiciendis minus ab ipsum. Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Neque modi assumenda repellendus ea error
+							voluptatibus a possimus perferendis magni fuga? Quod, totam!
+							Consectetur ab quis nisi reiciendis natus? Facere, magnam.
+						</p>
+					</div>
+
+					<div className="space-y-3">
+						<h3 className="text-[20px] lg:text-2xl text-[#161616] font-bold">
+							Collection of Personal Information
+						</h3>
+						<p className="text-base lg:text-[18px] font-normal text-[#383C45]">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+							temporibus, vitae omnis ratione autem ex eveniet aliquid velit,
+							pariatur, quod suscipit! Cum veritatis nisi, temporibus dolor
+							reiciendis minus ab ipsum. Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Neque modi assumenda repellendus ea error
+							voluptatibus a possimus perferendis magni fuga? Quod, totam!
+							Consectetur ab quis nisi reiciendis natus? Facere, magnam.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
