@@ -71,35 +71,60 @@ export const FAQs: Accordion[] = [
 		id: "item-2",
 		title: "What types of errands can I request?",
 		content: [
-			"ErrandGo connects people who need quick help with those willing to assist. As an errand creator, you post what you need and set your budget. Errand helpers then place their bids, you choose the best one, and they complete the task while sharing updates. Helpers earn after the errand is confirmed.",
+			`<ul class="space-y-2 list-disc">
+          		<li>Check prices in a market before you go</li>
+          		<li>Property or item condition verification</li>
+          		<li>Item availability and prices’ confirmation</li>
+          		<li>Quick enquiries at offices or service centers</li>
+          		<li>Small runs, or “just help me check” tasks</li>
+				<li>If it’s simple, legal, and location-based, you can post it on ErrandGo</li>
+        	</ul>`,
 		],
 	},
 	{
 		id: "item-3",
 		title: "How much can I earn as an errand helper?",
 		content: [
-			"ErrandGo connects people who need quick help with those willing to assist. As an errand creator, you post what you need and set your budget. Errand helpers then place their bids, you choose the best one, and they complete the task while sharing updates. Helpers earn after the errand is confirmed.",
+			"Your earnings depend on the errands you accept. Each errand shows the amount the requester is offering, and you keep the money once the task is completed and confirmed. The more errands you take, the more you earn. Some helpers make steady daily or weekly income.",
 		],
 	},
 	{
 		id: "item-4",
 		title: "How do I become an errand helper and start earning?",
 		content: [
-			"ErrandGo connects people who need quick help with those willing to assist. As an errand creator, you post what you need and set your budget. Errand helpers then place their bids, you choose the best one, and they complete the task while sharing updates. Helpers earn after the errand is confirmed.",
+			`<div class="space-y-2">
+			    <p>Becoming a helper is simple:</p>
+				<ol class="space-y-2 list-decimal pl-6">
+				  <li>Download the ErrandGo app</li>
+          		  <li>Sign up and complete your profile</li>
+          		  <li>Verify your identity and mobile number</li>
+          		  <li>Show interest in available errands</li>
+          		  <li>Complete assigned errand and get paid</li>
+				</ol>
+          		
+        	</div>`,
 		],
 	},
 	{
 		id: "item-5",
 		title: "Can I post an errand for a location I am not physically in?",
 		content: [
-			"ErrandGo connects people who need quick help with those willing to assist. As an errand creator, you post what you need and set your budget. Errand helpers then place their bids, you choose the best one, and they complete the task while sharing updates. Helpers earn after the errand is confirmed.",
+			"Yes. You can post an errand from anywhere as long as the errand’s location is accurate. Helpers in that area will see your request and can complete it on your behalf—even if you are in a different city or country.",
 		],
 	},
 	{
 		id: "item-6",
 		title: "What happens if a helper does not complete an errand?",
 		content: [
-			"ErrandGo connects people who need quick help with those willing to assist. As an errand creator, you post what you need and set your budget. Errand helpers then place their bids, you choose the best one, and they complete the task while sharing updates. Helpers earn after the errand is confirmed.",
+			`<div class="space-y-2">
+			    <p>If a helper cannot complete the task or cancels an errand:</p>
+			    <ul class="space-y-2 list-disc pl-6">
+				  <li>The errand automatically becomes available for other helpers</li>
+          		  <li>You are not charged</li>
+          		  <li>You can repost the errand anytime</li>
+				</ul>
+          		<p>To keep things safe, helpers who repeatedly do not fulfill tasks assigned to them may lose access to the platform</p>
+        	</div>`,
 		],
 	},
 ];

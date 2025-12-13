@@ -33,7 +33,11 @@ export default function FAQ() {
 							</AccordionTrigger>
 							<AccordionContent className="flex flex-col gap-4 text-balance bg-white py-4 px-[30px] rounded-xl text-[#383C45] font-normal text-[18px] lg:text-[20px]">
 								{item.content.map((paragraph, index) => (
-									<p key={index}>{paragraph}</p>
+									<div
+										className="text-[#383C45] text-[18px] lg:text-[20px] font-normal"
+										key={index}
+										dangerouslySetInnerHTML={{ __html: paragraph }}
+									/>
 								))}
 							</AccordionContent>
 						</AccordionItem>
