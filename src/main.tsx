@@ -15,7 +15,15 @@ const router = createBrowserRouter([
 		children: [
 			{ index: true, Component: HomePage },
 			{ path: "privacy-policy", Component: PrivacyPolicy },
-			{ path: "term-of-use", Component: TermOfUse },
+			{ path: "terms-of-use", Component: TermOfUse },
+			{
+				path: "*",
+				element: (
+					<div className="flex h-screen text-6xl items-center justify-center font-extrabold">
+						404
+					</div>
+				),
+			},
 		],
 	},
 ]);

@@ -49,7 +49,7 @@ export default function Footer() {
 
 					<div className="text-[#F8F3FF] space-y-5">
 						<div className="text-[#F8F3FF] flex gap-10 sm:justify-end">
-							<Link to="/term-of-use">Term of Use</Link>
+							<Link to="/terms-of-use">Term of Use</Link>
 							<Link to="/privacy-policy">Privacy Policy</Link>
 						</div>
 
