@@ -1,10 +1,10 @@
 import { PRIVACY_POLICY } from "@/lib/constants";
-import {
-	Accordion,
-	AccordionContent,
-	AccordionItem,
-	AccordionTrigger,
-} from "../ui/accordion";
+// import {
+// 	Accordion,
+// 	AccordionContent,
+// 	AccordionItem,
+// 	AccordionTrigger,
+// } from "../ui/accordion";
 
 function PrivacyPolicy() {
 	return (
@@ -20,7 +20,26 @@ function PrivacyPolicy() {
 					</span>
 				</div>
 
-				<Accordion type="single" collapsible className="w-full mb-20">
+				<div className="space-y-10 mb-20">
+					{PRIVACY_POLICY.map((item, index) => (
+						<div className="space-y-3" key={index}>
+							<h3 className="text-[20px] lg:text-2xl text-[#161616] font-bold">
+								{item.title}
+							</h3>
+
+							<div className="flex flex-col gap-4 text-balance bg-white py-4 px-[30px] rounded-xl text-[#383C45] font-normal text-[18px]">
+								{item.content.map((paragraph, index) => (
+									<div
+										key={index}
+										dangerouslySetInnerHTML={{ __html: paragraph }}
+									/>
+								))}
+							</div>
+						</div>
+					))}
+				</div>
+
+				{/* <Accordion type="single" collapsible className="w-full mb-20">
 					{PRIVACY_POLICY.map((item, index) => (
 						<AccordionItem
 							className="bg-[#F7F9FD] rounded-2xl p-6 py-4 mb-5 shadow-none"
@@ -42,7 +61,7 @@ function PrivacyPolicy() {
 							</AccordionContent>
 						</AccordionItem>
 					))}
-				</Accordion>
+				</Accordion> */}
 			</div>
 		</div>
 	);
