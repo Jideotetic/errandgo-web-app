@@ -49,8 +49,6 @@ function WaitList() {
 		console.log(data);
 	};
 
-	console.log({ errors });
-
 	return (
 		<div className="pt-[150px] lg:pt-[200px] bg-white px-4 min-h-screen pb-[150px]">
 			<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn space-y-5">

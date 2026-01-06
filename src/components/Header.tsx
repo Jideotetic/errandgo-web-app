@@ -63,6 +63,13 @@ function Header() {
 						</ul>
 					</nav>
 
+					<Link
+						to="/wait-list"
+						onClick={() => setSheetIsOpen(false)}
+						className="rounded-[360px] bg-white p-4 w-[142px] mx-auto text-[#7D32DF] text-[15px] text-center"
+					>
+						Join Waitlist
+					</Link>
 					<DownloadApp tag="mobile" />
 				</MobileNavigation>
 			</div>
