@@ -10,7 +10,7 @@ function Header() {
 	return (
 		<div className="px-4 pt-8 pb-4 lg:pt-12 fixed left-0 right-0 bg-linear-to-b from-[#FFFFFF] to-transparent z-50">
 			<div className="max-w-[1120px] w-full mx-auto h-16 p-4 lg:py-5 lg:px-[72px] gap-2.5 bg-[#F8F3FF] rounded-[360px] lg:h-[88px] flex justify-between items-center">
-				<Logo />
+				<Logo tag="header" />
 
 				{/* DESKTOP NAV */}
 				<>

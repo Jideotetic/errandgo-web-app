@@ -1,7 +1,22 @@
-export default function Logo() {
+import LogoDark from "./LogoDark";
+import LogoLight from "./LogoLight";
+
+export default function Logo({ tag }: { tag: string }) {
 	return (
-		<p className="font-extrabold text-[24px] lg:text-[32px]">
-			Errand<span className="text-[#7D32DF]">Go</span>
-		</p>
+		<>
+			<a href="/" className="flex items-center">
+				{tag === "header" && (
+					<>
+						<LogoLight />
+					</>
+				)}
+
+				{tag === "footer" && (
+					<>
+						<LogoDark />
+					</>
+				)}
+			</a>
+		</>
 	);
 }

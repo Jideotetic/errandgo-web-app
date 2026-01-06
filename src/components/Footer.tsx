@@ -3,6 +3,7 @@ import StoreButtons from "./StoreButtons";
 import qrCode from "/qr-code.svg";
 import { Fragment } from "react/jsx-runtime";
 import { Link } from "react-router";
+import Logo from "./Logo";
 
 export default function Footer() {
 	return (
@@ -35,9 +36,7 @@ export default function Footer() {
 				<div className="flex flex-col justify-between gap-12 sm:flex-row sm:items-center">
 					<div className="flex flex-1 flex-col gap-8">
 						<div className="w-full max-w-[483px] space-y-1">
-							<p className="text-[32px] font-extrabold text-[#F2D5F8]">
-								Errand<span className="text-green-300">Go</span>
-							</p>
+							<Logo tag="footer" />
 							<p className="text-[18px] font-light text-[#F8F3FF]">
 								errandgo@gmail.com
 							</p>
