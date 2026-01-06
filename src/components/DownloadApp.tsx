@@ -25,7 +25,7 @@ export default function DownloadApp({ tag }: DownloadAppProps) {
 				</button>
 			</div>
 			<span className="shrink-0">
-				{tag === "desktop" ? "Download App" : "Download"}
+				{tag === "desktop" ? "Get App" : "Get App"}
 			</span>
 		</div>
 	);

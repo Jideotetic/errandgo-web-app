@@ -3,6 +3,7 @@ import DownloadApp from "./DownloadApp";
 import { useState } from "react";
 import { MobileNavigation } from "./MobileNavigation";
 import Logo from "./Logo";
+import { Link } from "react-router";
 
 function Header() {
 	const [sheetIsOpen, setSheetIsOpen] = useState(false);
@@ -29,7 +30,15 @@ function Header() {
 						</ul>
 					</nav>
 
-					<DownloadApp tag="desktop" />
+					<div className="gap-4 items-center hidden lg:flex">
+						<Link
+							to="/wait-list"
+							className="rounded-[360px] bg-white p-4 w-[142px] text-[#7D32DF] text-[15px] text-center"
+						>
+							Join Waitlist
+						</Link>
+						<DownloadApp tag="desktop" />
+					</div>
 				</>
 
 				{/* MOBILE NAV */}

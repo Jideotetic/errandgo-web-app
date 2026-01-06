@@ -7,6 +7,7 @@ import RootLayout from "./components/RootLayout.tsx";
 import HomePage from "@/components/pages/HomePage.tsx";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy.tsx";
 import TermOfUse from "./components/pages/TermOfUse.tsx";
+import WaitList from "./components/pages/WaitList.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
 			{ index: true, Component: HomePage },
 			{ path: "privacy-policy", Component: PrivacyPolicy },
 			{ path: "terms-of-use", Component: TermOfUse },
+			{ path: "wait-list", Component: WaitList },
 			{
 				path: "*",
 				element: (
