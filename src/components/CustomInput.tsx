@@ -7,6 +7,7 @@ export default function CustomInput({
 	icon,
 	handleRevealPassword,
 	error,
+	disabled,
 	...props
 }: {
 	label: string;
@@ -17,6 +18,7 @@ export default function CustomInput({
 	icon?: string;
 	handleRevealPassword?: () => void;
 	error?: string;
+	disabled?: boolean;
 }) {
 	return (
 		<label className="flex flex-col items-start gap-2 font-light text-[#09032A]">
@@ -29,7 +31,8 @@ export default function CustomInput({
 					<input
 						type={type}
 						placeholder={placeholder}
-						className={`rounded-[12px] border-none bg-[#F7F9FD] px-3 py-4 pl-24 placeholder:text-sm placeholder:text-[#8791A7] focus:border-none focus:outline-0 focus:outline-none focus-visible:border-none focus-visible:ring-0 ${className}`}
+						disabled={disabled}
+						className={`rounded-[12px] disabled:cursor-not-allowed disabled:bg-gray-300 disabled:border-none disabled:outline-none border-none bg-[#F7F9FD] px-3 py-4 pl-24 placeholder:text-sm placeholder:text-[#8791A7] focus:border-none focus:outline-0 focus:outline-none focus-visible:border-none focus-visible:ring-0 ${className}`}
 						{...props}
 					/>
 					{icon && (
@@ -47,7 +50,8 @@ export default function CustomInput({
 						<input
 							type={type}
 							placeholder={placeholder}
-							className={`rounded-[12px] border-none bg-[#F7F9FD] px-3 py-4 placeholder:text-sm placeholder:text-[#8791A7] focus:border-none focus:outline-0 focus:outline-none focus-visible:border-none focus-visible:ring-0 ${className}`}
+							disabled={disabled}
+							className={`rounded-[12px] disabled:cursor-not-allowed disabled:bg-gray-300 disabled:border-none disabled:outline-none border-none bg-[#F7F9FD] px-3 py-4 placeholder:text-sm placeholder:text-[#8791A7] focus:border-none focus:outline-0 focus:outline-none focus-visible:border-none focus-visible:ring-0 ${className}`}
 							{...props}
 						/>
 						{icon && (

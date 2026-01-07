@@ -9,6 +9,7 @@ import PrivacyPolicy from "./components/pages/PrivacyPolicy.tsx";
 import TermOfUse from "./components/pages/TermOfUse.tsx";
 import WaitList from "./components/pages/WaitList.tsx";
 import ReactQueryProviders from "./components/providers.tsx";
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
 	{
@@ -35,6 +36,7 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<ReactQueryProviders>
 			<RouterProvider router={router} />
+			<ToastContainer />
 		</ReactQueryProviders>
 	</StrictMode>
 );

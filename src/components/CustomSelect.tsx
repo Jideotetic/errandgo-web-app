@@ -32,7 +32,7 @@ export default function CustomSelect<T extends FieldValues>({
 				<div className="relative w-full rounded-sm">
 					<select
 						{...(register ? register : {})}
-						className={`h-14 rounded-[12px] border-none bg-[#F7F9FD] px-3 py-4 placeholder:text-sm placeholder:text-[#8791A7] focus:border-none focus:outline-0 focus:outline-none focus-visible:border-none focus-visible:ring-0 ${className} w-full`}
+						className={`h-14 rounded-[12px] disabled:cursor-not-allowed disabled:bg-gray-300 disabled:border-none disabled:outline-none border-none bg-[#F7F9FD] px-3 py-4 placeholder:text-sm placeholder:text-[#8791A7] focus:border-none focus:outline-0 focus:outline-none focus-visible:border-none focus-visible:ring-0 ${className} w-full`}
 						{...rest}
 						disabled={disabled}
 					>

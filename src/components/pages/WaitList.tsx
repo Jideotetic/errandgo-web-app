@@ -9,6 +9,12 @@ import { z } from "zod";
 import "react-international-phone/style.css";
 import { useMutation } from "@tanstack/react-query";
 import waitList, { type WaitListData } from "@/services";
+import { toast } from "react-toastify";
+import type { AxiosError } from "axios";
+
+interface ApiErrorResponse {
+	message: string;
+}
 
 const USER_TYPE = [
 	{ label: "Earn by Running Errands", value: "earn" },
@@ -53,18 +59,20 @@ function WaitList() {
 		onSuccess: async (data) => {
 			if (data.statusText === "OK") {
 				reset();
+				toast.success("Details Submitted successfully");
 			} else {
-				// toast.error("Something went wrong");
+				toast.error("Something went wrong");
 			}
 		},
-		onError: (error) => {
+		onError: (error: AxiosError<ApiErrorResponse>) => {
 			console.error("Error:", error);
-			// toast.error(error.response.data.message);
+			const message = error.response?.data?.message || "Something went wrong";
+
+			toast.error(message);
 		},
 	});
 
 	const onSubmit = (data: WaitListFormData) => {
-		console.log(data);
 		waitListMutation(data);
 	};
 
@@ -98,6 +106,7 @@ function WaitList() {
 							error={errors.fullName?.message}
 							{...register("fullName")}
 							className="w-full"
+							disabled={waitListPending}
 						/>
 
 						<CustomInput
@@ -106,6 +115,7 @@ function WaitList() {
 							type="text"
 							error={errors.email?.message}
 							{...register("email")}
+							disabled={waitListPending}
 							className="w-full"
 						/>
 
@@ -127,9 +137,11 @@ function WaitList() {
 											fontSize: "14px",
 											height: "56px",
 											width: "100%",
-											background: "#F7F9FD",
+											background: waitListPending ? "#d1d5dc" : "#F7F9FD",
 											border: "none",
+											cursor: waitListPending ? "not-allowed" : "text",
 										}}
+										disabled={waitListPending}
 										countrySelectorStyleProps={{
 											buttonStyle: {
 												borderTopLeftRadius: "12px",
@@ -137,7 +149,7 @@ function WaitList() {
 												height: "56px",
 												width: "78px",
 												border: "none",
-												background: "#F7F9FD",
+												background: waitListPending ? "#d1d5dc" : "#F7F9FD",
 												marginRight: "2px",
 											},
 										}}
@@ -158,15 +170,17 @@ function WaitList() {
 							options={USER_TYPE}
 							error={errors.userType?.message}
 							register={register("userType")}
+							disabled={waitListPending}
 						/>
 
 						<div></div>
 
 						<button
-							className="bg-[#7D32DF]  w-full order-2 text-white cursor-pointer py-4 px-2 rounded-[360px]"
+							disabled={waitListPending}
+							className="bg-[#7D32DF] disabled:bg-[#7D32DF]/70 disabled:cursor-not-allowed  w-full order-2 text-white cursor-pointer py-4 px-2 rounded-[360px]"
 							type="submit"
 						>
-							{waitListPending ? "Submitting" : "Submit"}
+							{waitListPending ? "Submitting..." : "Submit"}
 						</button>
 					</form>
 				</div>
