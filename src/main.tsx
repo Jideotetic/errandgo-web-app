@@ -8,6 +8,7 @@ import HomePage from "@/components/pages/HomePage.tsx";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy.tsx";
 import TermOfUse from "./components/pages/TermOfUse.tsx";
 import WaitList from "./components/pages/WaitList.tsx";
+import ReactQueryProviders from "./components/providers.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -32,6 +33,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>
-		<RouterProvider router={router} />
+		<ReactQueryProviders>
+			<RouterProvider router={router} />
+		</ReactQueryProviders>
 	</StrictMode>
 );

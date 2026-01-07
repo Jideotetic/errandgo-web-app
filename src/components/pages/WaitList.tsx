@@ -7,6 +7,8 @@ import { PhoneInput } from "react-international-phone";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import "react-international-phone/style.css";
+import { useMutation } from "@tanstack/react-query";
+import waitList, { type WaitListData } from "@/services";
 
 const USER_TYPE = [
 	{ label: "Earn by Running Errands", value: "earn" },
@@ -17,7 +19,7 @@ const WaitListSchema = z.object({
 	fullName: z.string().min(2, "Full name is required"),
 	phoneNumber: z.string().regex(/^\+\d{10,15}$/, "Enter a valid phone number"),
 	email: z.email("Enter a valid email"),
-	errandType: z
+	userType: z
 		.string()
 		.nonempty("Plan to use ErrandGo for is required")
 		.refine((val) => ["earn", "get_help"].includes(val), {
@@ -35,18 +37,35 @@ function WaitList() {
 		handleSubmit,
 		formState: { errors },
 		control,
+		reset,
 	} = useForm({
 		resolver: zodResolver(WaitListSchema),
 		defaultValues: {
 			fullName: "",
 			email: "",
 			phoneNumber: "",
-			errandType: "",
+			userType: "",
+		},
+	});
+
+	const { mutate: waitListMutation, isPending: waitListPending } = useMutation({
+		mutationFn: (data: WaitListData) => waitList(data),
+		onSuccess: async (data) => {
+			if (data.statusText === "OK") {
+				reset();
+			} else {
+				// toast.error("Something went wrong");
+			}
+		},
+		onError: (error) => {
+			console.error("Error:", error);
+			// toast.error(error.response.data.message);
 		},
 	});
 
 	const onSubmit = (data: WaitListFormData) => {
 		console.log(data);
+		waitListMutation(data);
 	};
 
 	return (
@@ -137,8 +156,8 @@ function WaitList() {
 							label="How do you plan to use ErrandGo?"
 							placeholder="Select"
 							options={USER_TYPE}
-							error={errors.errandType?.message}
-							register={register("errandType")}
+							error={errors.userType?.message}
+							register={register("userType")}
 						/>
 
 						<div></div>
@@ -147,7 +166,7 @@ function WaitList() {
 							className="bg-[#7D32DF]  w-full order-2 text-white cursor-pointer py-4 px-2 rounded-[360px]"
 							type="submit"
 						>
-							Submit
+							{waitListPending ? "Submitting" : "Submit"}
 						</button>
 					</form>
 				</div>
