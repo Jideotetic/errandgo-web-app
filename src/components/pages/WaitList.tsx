@@ -9,8 +9,8 @@ import { z } from "zod";
 import "react-international-phone/style.css";
 
 const USER_TYPE = [
-	{ label: "Creator", value: "Creator" },
-	{ label: "Runner", value: "Runner" },
+	{ label: "Earn by Running Errands", value: "earn" },
+	{ label: "Get Help with my Errands", value: "get_help" },
 ];
 
 const WaitListSchema = z.object({
@@ -20,7 +20,7 @@ const WaitListSchema = z.object({
 	errandType: z
 		.string()
 		.nonempty("Plan to use ErrandGo for is required")
-		.refine((val) => ["Creator", "Runner"].includes(val), {
+		.refine((val) => ["earn", "get_help"].includes(val), {
 			message: "Invalid selection",
 		}),
 });
