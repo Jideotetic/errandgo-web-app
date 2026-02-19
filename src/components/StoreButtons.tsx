@@ -8,7 +8,16 @@ export default function StoreButtons() {
 				<img src={appStore} alt="" />
 			</button>
 
-			<button className="hover:scale-[1.02] transition-transform cursor-pointer">
+			<button
+				onClick={() => {
+					window.open(
+						"https://play.google.com/store/apps/details?id=app.errandgo",
+						"_blank",
+						"noopener,noreferrer",
+					);
+				}}
+				className="hover:scale-[1.02] transition-transform cursor-pointer"
+			>
 				<img src={playStore} alt="" />
 			</button>
 		</div>

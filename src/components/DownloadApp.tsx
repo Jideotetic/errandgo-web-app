@@ -11,8 +11,8 @@ export default function DownloadApp({ tag }: DownloadAppProps) {
 				tag === "desktop"
 					? "hidden lg:flex"
 					: tag === "mobile"
-					? "block w-full"
-					: "block"
+						? "block w-full"
+						: "block"
 			}`}
 		>
 			<div className="flex items-center gap-3">
@@ -20,7 +20,16 @@ export default function DownloadApp({ tag }: DownloadAppProps) {
 					<FaApple className="text-[24px]" />
 				</button>
 				|
-				<button className="cursor-pointer shrink-0">
+				<button
+					onClick={() => {
+						window.open(
+							"https://play.google.com/store/apps/details?id=app.errandgo",
+							"_blank",
+							"noopener,noreferrer",
+						);
+					}}
+					className="cursor-pointer shrink-0"
+				>
 					<FaGooglePlay className="text-[24]" />
 				</button>
 			</div>
