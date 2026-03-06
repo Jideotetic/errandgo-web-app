@@ -1,6 +1,6 @@
 import frameOne from "/frame-1.svg";
 import frameTwo from "/frame-2.svg";
-import frameThree from "/frame-3.svg";
+import frameThree from "/Frame 59348.svg";
 import frameFour from "/frame-4.svg";
 
 export default function Features() {

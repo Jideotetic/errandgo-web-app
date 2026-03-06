@@ -8,6 +8,7 @@ import HomePage from "@/components/pages/HomePage.tsx";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy.tsx";
 import TermOfUse from "./components/pages/TermOfUse.tsx";
 import WaitList from "./components/pages/WaitList.tsx";
+import Download from "./components/pages/Download.tsx";
 import ReactQueryProviders from "./components/providers.tsx";
 import { ToastContainer } from "react-toastify";
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
 		Component: RootLayout,
 		children: [
 			{ index: true, Component: HomePage },
+			{ path: "download", Component: Download },
 			{ path: "privacy-policy", Component: PrivacyPolicy },
 			{ path: "terms-of-use", Component: TermOfUse },
 			{ path: "wait-list", Component: WaitList },

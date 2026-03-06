@@ -1,4 +1,4 @@
-import mobileAppImage from "/mobile-app-image.svg";
+import mobileAppImage from "/Group 28918.svg";
 import StoreButtons from "./StoreButtons";
 
 export default function Hero() {

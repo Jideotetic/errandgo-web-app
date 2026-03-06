@@ -1,11 +1,21 @@
 import { FOOTER_LINKS } from "@/lib/constants";
 import StoreButtons from "./StoreButtons";
-import qrCode from "/qr-code.svg";
-import { Fragment } from "react/jsx-runtime";
+import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router";
 import Logo from "./Logo";
+import QRCode from "qrcode";
+
+const APP_DOWNLOAD_URL = import.meta.env.VITE_FRONTEND_BASE_URL + "/download";
 
 export default function Footer() {
+	const [qrCodeUrl, setQrCodeUrl] = useState("");
+
+	useEffect(() => {
+		QRCode.toDataURL(APP_DOWNLOAD_URL, { width: 320, margin: 2 }).then(
+			setQrCodeUrl,
+		);
+	}, []);
+
 	return (
 		<footer
 			className="pt-[100px] pb-[50px] max-w-[1440px] mx-auto w-full bg-[#00072D] px-4"
@@ -13,7 +23,15 @@ export default function Footer() {
 		>
 			<div className="max-w-[1120px] w-full mx-auto text-[#00072D] animate-FadeIn">
 				<div className="grid grid-cols-1 lg:grid-cols-3 bg-[#F8F3FF] rounded-2xl px-4 py-10 lg:py-14 lg:px-[98px] gap-14 mb-8">
-					<img src={qrCode} className="hidden lg:block h-full w-full" alt="" />
+					<div className="hidden lg:flex flex-col items-center gap-4">
+						{qrCodeUrl && (
+							<img
+								src={qrCodeUrl}
+								className="h-full w-full"
+								alt="Scan QR code to download app"
+							/>
+						)}
+					</div>
 
 					<div className="col-span-2 space-y-10">
 						<p className="font-semibold text-[#00072D] text-[28px] md:text-[32px] mb-5 font-unbounded">
@@ -38,7 +56,7 @@ export default function Footer() {
 						<div className="w-full max-w-[483px] space-y-1">
 							<Logo tag="footer" />
 							<p className="text-[18px] font-light text-[#F8F3FF]">
-								errandgo@gmail.com
+								info@errandgo.app
 							</p>
 							<p className="text-[18px] font-light text-[#F8F3FF]">
 								+12384652670
@@ -56,6 +74,7 @@ export default function Footer() {
 							{FOOTER_LINKS.map((link, i) => (
 								<Fragment key={i}>
 									<a
+										target="_blank"
 										className="font-normal text-[#F8F3FF] flex items-center gap-2"
 										href={link.href}
 									>

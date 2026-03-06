@@ -21,12 +21,12 @@ export const NAV_LINKS: NavLink[] = [
 
 export const FOOTER_LINKS = [
 	{
-		href: "https://www.instagram.com",
+		href: "https://www.instagram.com/errandgoapp",
 		icon: RiInstagramFill,
 	},
-	{ href: "https://www.x.com", icon: RiTwitterXFill },
-	{ href: "https://www.tiktok.com", icon: PiTiktokLogoFill },
-	{ href: "https://www.facebook.com", icon: FaFacebook },
+	{ href: "https://www.x.com/errandgoapp", icon: RiTwitterXFill },
+	{ href: "https://www.tiktok.com/@errandgoapp", icon: PiTiktokLogoFill },
+	{ href: "https://www.facebook.com/errandgoapp", icon: FaFacebook },
 ];
 
 export const GET_HELP_USE_CASES = [

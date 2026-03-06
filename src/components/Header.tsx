@@ -3,7 +3,6 @@ import DownloadApp from "./DownloadApp";
 import { useState } from "react";
 import { MobileNavigation } from "./MobileNavigation";
 import Logo from "./Logo";
-import { Link } from "react-router";
 
 function Header() {
 	const [sheetIsOpen, setSheetIsOpen] = useState(false);
@@ -31,12 +30,13 @@ function Header() {
 					</nav>
 
 					<div className="gap-4 items-center hidden lg:flex">
-						<Link
-							to="/wait-list"
+						<a
+							href="https://docs.errandgo.app"
+							target="_blank"
 							className="rounded-[360px] bg-white p-4 w-[142px] text-[#7D32DF] text-[15px] text-center"
 						>
-							Join Waitlist
-						</Link>
+							Learn More
+						</a>
 						<DownloadApp tag="desktop" />
 					</div>
 				</>
@@ -63,13 +63,14 @@ function Header() {
 						</ul>
 					</nav>
 
-					<Link
-						to="/wait-list"
+					<a
+						href="https://docs.errandgo.app"
+						target="_blank"
 						onClick={() => setSheetIsOpen(false)}
 						className="rounded-[360px] bg-white p-4 w-[142px] mx-auto text-[#7D32DF] text-[15px] text-center"
 					>
-						Join Waitlist
-					</Link>
+						Learn More
+					</a>
 					<DownloadApp tag="mobile" />
 				</MobileNavigation>
 			</div>

@@ -4,7 +4,16 @@ import playStore from "/play-store.svg";
 export default function StoreButtons() {
 	return (
 		<div className="flex gap-4">
-			<button className="hover:scale-[1.02] transition-transform cursor-pointer">
+			<button
+				onClick={() => {
+					window.open(
+						"https://apps.apple.com/us/app/errandgo-local-tasks-errand/id6758111345",
+						"_blank",
+						"noopener,noreferrer",
+					);
+				}}
+				className="hover:scale-[1.02] transition-transform cursor-pointer"
+			>
 				<img src={appStore} alt="" />
 			</button>
 

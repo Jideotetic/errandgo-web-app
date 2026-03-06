@@ -1,6 +1,7 @@
 import { useState } from "react";
 import StoreButtons from "./StoreButtons";
 import frameFive from "/frame-5.svg";
+import frameSix from "/Clip path group.svg";
 
 export default function HowItWorks() {
 	const [view, setView] = useState("get-help");
@@ -139,7 +140,7 @@ export default function HowItWorks() {
 								</div>
 
 								<div className="flex justify-center items-center">
-									<img src={frameFive} className="h-full" alt="" />
+									<img src={frameSix} className="h-full" alt="" />
 								</div>
 
 								<div className="flex flex-col justify-between gap-12 max-w-[343px] mx-auto w-full">

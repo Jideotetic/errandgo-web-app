@@ -16,7 +16,16 @@ export default function DownloadApp({ tag }: DownloadAppProps) {
 			}`}
 		>
 			<div className="flex items-center gap-3">
-				<button className="cursor-pointer shrink-0">
+				<button
+					onClick={() => {
+						window.open(
+							"https://apps.apple.com/us/app/errandgo-local-tasks-errand/id6758111345",
+							"_blank",
+							"noopener,noreferrer",
+						);
+					}}
+					className="cursor-pointer shrink-0"
+				>
 					<FaApple className="text-[24px]" />
 				</button>
 				|
